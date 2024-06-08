@@ -7,11 +7,11 @@ const Experience = () => {
   return (
     <div>
         <div className='flex flex-col items-center'>
-            <h1 className='text-[35px] mb-16 text-white'>Experience <span className="text-purple-700">Timeline</span></h1>
+            <h1 className='text-[35px] mb-16 text-white  '>Experience <span className="text-purple-700">Timeline</span></h1>
         </div>
-      <VerticalTimeline>
+      <VerticalTimeline className=''>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work  "
     dateClassName={{color: "#fff"}}
     iconStyle={{ background: '#6A1B9A', color: '#fff' }}
     icon={<MdSwapHorizontalCircle />}
@@ -33,7 +33,7 @@ const Experience = () => {
     <h1 className='text-gray-600 font-light text-sm'>Jan 2024 - April 2024</h1>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work  "
     iconStyle={{ background: '#6A1B9A', color: '#fff' }}
     icon={<MdSwapHorizontalCircle />}
   >
@@ -54,14 +54,14 @@ const Experience = () => {
     <h1 className='text-gray-600 font-light text-sm'>Sep 2018 - Dec 2023</h1>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work  "
     iconStyle={{ background: '#6A1B9A', color: '#fff' }}
     icon={<MdSwapHorizontalCircle />}
   >
     <div>
         <img src="vtu.png" alt=""  className='h-16 w-16'/>
     </div>
-    <h3 className="vertical-timeline-element-title">Visvesvaraya Technological University</h3>
+    <h3 className="vertical-timeline-element-title ">Visvesvaraya Technological University</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">2018-2022</h4> */}
     <h4 className="vertical-timeline-element-subtitle">B.E in Information Science And Engineering</h4>
     <br />

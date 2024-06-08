@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="navbarcontainer w-full max-w-[1024px] flex items-center justify-center ">
         {/* <div onclick={()=>setShowNav(!showNav)}><HiOutlineAdjustmentsHorizontal/></div> */}
         <div className="items">
-            <ul className='flex text-white gap-16 text-xl justify-center  '>
+            <ul className='flex  text-white gap-16 text-xl justify-center    '>
                 <Link to={"/"}><li className='flex gap-2 items-center transform transition duration-500 hover:scale-125' ><AiOutlineHome/>Home</li></Link>
                 <Link to={"about"}><li  className='flex gap-2 items-center transform transition duration-500 hover:scale-125' ><AiOutlineUser/>About</li></Link>
                 <Link to={"project"}><li  className='flex gap-2 items-center transform transition duration-500 hover:scale-125'><AiOutlineFundProjectionScreen/>Projects</li></Link>

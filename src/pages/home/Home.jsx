@@ -17,8 +17,8 @@ const Home = () => {
     <>
       <div className="flex justify-center mt-10 h-full ">
         <div className="intro flex justify-between w-full max-w-[1024px] h-[70%] ">
-          <div className="left flex items-center" style={{ flex: "2" }}>
-            <div className="text-white text-[45px] flex flex-col gap-3">
+          <div className="left flex items-center " style={{ flex: "2" }}>
+            <div className="text-white text-[45px] flex flex-col gap-3 ">
               <h1>
                 Hi There! <span>👋🏻</span>
               </h1>
@@ -40,7 +40,7 @@ const Home = () => {
                 />
               </div>
               <a
-          className=" flex w-max cursor-pointer items-center gap-5 text-2xl rounded-lg  text-white bg-purple-700 px-3 py-2 transform transition duration-500 hover:scale-110"
+          className=" flex w-max cursor-pointer items-center gap-5 text-2xl rounded-lg  text-white bg-purple-700 px-3 py-2 transform transition duration-500 hover:scale-110 "
           href='https://drive.google.com/file/d/16xCfOho4dPZRv6ZXIxMJinQyCRZV-lxn/view'
           target={'_blank'}
           rel="noreferrer"
@@ -75,40 +75,41 @@ const Home = () => {
         
       
       </div>
-      
       <div className=" flex flex-col h-[70%] ">
-      <div className="flex w-full justify-center text-[35px] mb-16 text-white ">
-        <h1>Professional <span className="text-purple-700">Skillset</span></h1>
-      </div>
-      <div className="flex justify-center ">
-        <div className="flex justify-between w-full max-w-[1024px] ">
-        <div className="  w-full skills grid grid-cols-1 gap-6 md:grid-cols-4 h-[10px] ">
-            {skills.map((skill, index) => {
-              return (
-                <div
-                  className="flex items-center space-x-1 cursor-pointer transform transition duration-500 hover:scale-90"
-                  key={`skill${index}`}
-                >
-                  {skill.icon && (
-                    <div className="text-2xl flex">{skill.icon}</div>
-                  )}
-                  {skill.img && (
-                    <img src={skill.img} className="h-6 w-6" alt=""></img>
-                  )}
-                  <div className=" text-white">{skill.skill}</div>
+            <div className="flex w-full justify-center text-[35px] mb-16 text-white ">
+              <h1>
+                Professional <span className="text-purple-700">Skillset</span>
+              </h1>
+            </div>
+            <div className="flex justify-center ">
+              <div className="flex justify-between w-full max-w-[1024px] ">
+                <div className="  w-full skills grid grid-cols-1 gap-6 md:grid-cols-4 h-[10px] ">
+                  {skills.map((skill, index) => {
+                    return (
+                      <div
+                        className="flex items-center space-x-1 cursor-pointer transform transition duration-500 hover:scale-90"
+                        key={`skill${index}`}
+                      >
+                        {skill.icon && (
+                          <div className="text-2xl flex">{skill.icon}</div>
+                        )}
+                        {skill.img && (
+                          <img src={skill.img} className="h-6 w-6" alt=""></img>
+                        )}
+                        <div className=" text-white">{skill.skill}</div>
+                      </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
+              </div>
+            </div>
           </div>
-          
-        </div>
-      </div>
-      </div>
+     
       <Experience/>
       <br />
       <br />
-      <div className="flex justify-center h-[40%] ">
-      <div className="socials flex items-center ">
+      <div className="flex justify-center h-[40%]   ">
+      <div className="socials flex items-center  ">
         <div className="flex flex-col gap-4 items-center text-white text-[35px]">
         <h1>CONNECT WITH ME </h1>
         <p className="text-lg">My <span className="text-purple-700">SOCIALS</span> :</p>

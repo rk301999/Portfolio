@@ -5,7 +5,6 @@ import { createBrowserRouter,RouterProvider ,useNavigate } from 'react-router-do
 import Home from './pages/home/Home.jsx'
 import Project from './pages/project/Project.jsx'
 import About from './pages/about/About.jsx'
-import Resume from './pages/resume/Resume.jsx'
 import Error from './pages/error/Error.jsx'
 import './index.css'
 
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
       {
         path:"/about",
         element:<About/>
-      },
-      {
-        path:"/resume",
-        element:<Resume/>
       },
       {
         path:"*",
