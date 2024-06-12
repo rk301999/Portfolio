@@ -66,7 +66,7 @@ const Experience = () => {
     <h4 className="vertical-timeline-element-subtitle">B.E in Information Science And Engineering</h4>
     <br />
     <ul className='list-disc'>
-        <li>Graduated with GPA 8.5</li>
+        <li>Graduated with GPA 8.3</li>
         <li>Lead Problem Setter in Coding Club Techhub </li>
         <li>Member of the Debating Society (DEBSOC)</li>
     </ul>
