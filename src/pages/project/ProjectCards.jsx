@@ -12,11 +12,11 @@ const ProjectCards = ({url,title,desc,demo,github}) => {
             <h1 className='text-2xl'>{title}</h1>
             <p className='text-sm italic tracking-wide'>{desc}</p>
             <div className="btn flex gap-11">
-                <a href={github} >
+                <a href={github} target='_blank'>
                     <div className='flex items-center gap-2 bg-purple-700 p-2 rounded-lg'><AiFillGithub/>{" "}Github</div>
                     
                 </a>
-                {demo!="" && <a href={demo}><div className='flex items-center gap-2 bg-purple-700 p-2 rounded-md'><PiPresentation/>{" "}Demo</div></a>}
+                {demo!="" && <a href={demo} target='_blank'><div className='flex items-center gap-2 bg-purple-700 p-2 rounded-md'><PiPresentation/>{" "}Demo</div></a>}
             </div>
         </div>
     </div>
