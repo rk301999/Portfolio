@@ -116,7 +116,7 @@ const Home = () => {
         <div className="social-icons flex gap-6 text-[50px] mb-5 " >
           <a href="https://github.com/rk301999" target="_blank"><AiFillGithub className="hover:text-purple-700 transform transition duration-500 hover:scale-90" /> </a>
           <a href="https://x.com/rk301999" target="_blank"><AiOutlineTwitter  className="hover:text-purple-700 transform transition duration-500 hover:scale-90"/> </a>
-          <a href="https://www.linkedin.com/in/ritesh-kumar-16041616b/" target="_blank"><FaLinkedinIn className="hover:text-purple-700 transform transition duration-500 hover:scale-90"/> </a>
+          <a href="www.linkedin.com/in/rk301999" target="_blank"><FaLinkedinIn className="hover:text-purple-700 transform transition duration-500 hover:scale-90"/> </a>
           <a href="https://www.instagram.com/riteshkr_" target="_blank">< AiFillInstagram className="hover:text-purple-700 transform transition duration-500 hover:scale-90"/> </a>
         </div>
         
