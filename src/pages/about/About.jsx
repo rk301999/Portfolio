@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react'
 // import Github from '../../components/github/Github'
 import { FaExternalLinkAlt } from "react-icons/fa";
-
+import "./about.css"
 
 const About = () => {
   return (
     <>
     
-    <div className='flex justify-center items-center mt-10 h-full'>
-      <div className="intro  w-full max-w-[1024px] h-[80%]">
+    <div className='mainintro flex justify-center items-center mt-10 h-full'>
+      <div className="intro  w-full max-w-[1024px] ">
         <h1 className='flex w-full justify-center text-[55px] mb-16 text-white'>About<span className="text-purple-700">&nbsp;Me</span></h1>
       <div className="main flex gap-6">
       <div className="left" style={{ flex: "1" }}>
@@ -28,10 +28,10 @@ const About = () => {
       </div>
     </div>
     {/* <Github/> */}
-    <div className='flex items-center justify-center w-full text-[35px] mb-16 text-white'>
+    <div className='github1 flex items-center justify-center w-full text-[35px] mb-16 text-white'>
         <h1>Github <span className='text-purple-700'>Contributions</span></h1>
     </div>
-    <div className='flex  flex-col items-center justify-center w-full gap-3 text-white mb-24'>
+    <div className=' github2 flex  flex-col items-center justify-center w-full gap-3 text-white mb-24'>
     <img src="http://ghchart.rshah.org/rk301999" alt="Ritesh Github chart" className='h-[150px] '/>
     <h1 className='text-[20px]'>Made <span className='text-purple-700 '>63</span> Contributions last year</h1>
     </div>

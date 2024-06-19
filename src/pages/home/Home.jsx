@@ -11,6 +11,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Experience from "../../components/experience/Experience";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "./home.css"
 
 const Home = () => {
   return (
@@ -36,11 +37,12 @@ const Home = () => {
                     autoStart: true,
                     loop: true,
                     deleteSpeed: 50,
+                    
                   }}
                 />
               </div>
               <a
-          className=" flex w-max cursor-pointer items-center gap-5 text-2xl rounded-lg  text-white bg-purple-700 px-3 py-2 transform transition duration-500 hover:scale-110 "
+          className=" resume flex w-max cursor-pointer items-center gap-5 text-2xl rounded-lg  text-white bg-purple-700 px-3 py-2 transform transition duration-500 hover:scale-110 "
           href='https://drive.google.com/file/d/16xCfOho4dPZRv6ZXIxMJinQyCRZV-lxn/view'
           target={'_blank'}
           rel="noreferrer"
@@ -75,15 +77,15 @@ const Home = () => {
         
       
       </div>
-      <div className=" flex flex-col h-[70%] ">
+      {/* <div className=" flex flex-col h-[70%] flex-wrap">
             <div className="flex w-full justify-center text-[35px] mb-16 text-white ">
               <h1>
                 Professional <span className="text-purple-700">Skillset</span>
               </h1>
             </div>
-            <div className="flex justify-center ">
-              <div className="flex justify-between w-full max-w-[1024px] ">
-                <div className="  w-full skills grid grid-cols-1 gap-6 md:grid-cols-4 h-[10px] ">
+            <div className="flex justify-center w-screen ">
+              <div className="flex justify-between w-screen h-full max-w-[1024px] ">
+                <div className=" skillset w-full skills grid grid-cols-1 gap-6 md:grid-cols-4 h-[10px] ">
                   {skills.map((skill, index) => {
                     return (
                       <div
@@ -102,6 +104,33 @@ const Home = () => {
                   })}
                 </div>
               </div>
+            </div>
+          </div> */}
+          <div className="flex justify-center w-full">
+            <div className="mainskills max-w-[1024px] w-full ">
+            <div className="flex flex-col  gap-10 items-center py-52">
+            <h1 className="text-[35px] text-white">
+                Professional <span className="text-purple-700">Skillset</span>
+              </h1>
+              <div className=" skillset w-full skills grid  gap-6 grid-cols-4  ">
+                  {skills.map((skill, index) => {
+                    return (
+                      <div
+                        className="flex items-center space-x-1 cursor-pointer transform transition duration-500 hover:scale-90"
+                        key={`skill${index}`}
+                      >
+                        {skill.icon && (
+                          <div className="text-2xl flex">{skill.icon}</div>
+                        )}
+                        {skill.img && (
+                          <img src={skill.img} className="h-6 w-6" alt=""></img>
+                        )}
+                        <div className=" text-white">{skill.skill}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+            </div>
             </div>
           </div>
      

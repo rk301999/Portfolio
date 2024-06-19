@@ -1,7 +1,7 @@
 import React from 'react'
 import { project } from '../../projectsdata.jsx'
 import ProjectCards from './ProjectCards'
-
+import "./project.css"
 const Project = () => {
   return (
     <div className='main flex justify-center mt-10 mb-20' >

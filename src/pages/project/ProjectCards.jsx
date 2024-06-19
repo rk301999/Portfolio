@@ -3,6 +3,7 @@ import {
     AiFillGithub,
   } from "react-icons/ai";
   import { PiPresentation } from "react-icons/pi";
+  import "./project.css"
 
 const ProjectCards = ({url,title,desc,demo,github}) => {
   return (
